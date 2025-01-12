@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIAKAD - Daftar Nilai Mahasiswa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      aside {
+        background-color: #2a3f54;
+        color: white;
+        padding: 20px;
+        width: 250px;
+        height: 100vh;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 20px;
+        flex-grow: 1;
+      }
+      .alert {
+        display: flex;
+        align-items: center;
+        background-color: #f9e79f;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .alert .icon {
+        margin-right: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <h2>SIAKAD</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Pengajuan Proposal</a></li>
+          <li><a href="dosen.html">Daftar Nilai Mahasiswa</a></li>
+          <li><a href="dashboard.html">Jadwal Sidang Mahasiswa</a></li>
+        </ul>
+      </nav>
+      <a href="#">Log Out</a>
+    </aside>
+    <main>
+      <section>
+        <h1>Daftar Nilai Mahasiswa</h1>
+        <div class="alert">
+          <span class="icon">⚠️</span>
+          <p>Anda belum memasukkan nilai mahasiswa lagi</p>
+        </div>
+        <button>Masukkan Nilai</button>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>28/01/2025</td>
+            <td>225610044</td>
+            <td>Fransiskus Krisna Murti</td>
+            <td>85.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>02/02/2025</td>
+            <td>225610076</td>
+            <td>Jahfal Nafi Maula</td>
+            <td>90.0</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>28/01/2025</td>
+            <td>225610081</td>
+            <td>Mikhael Bintang Suryaning</td>
+            <td>100.0</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
